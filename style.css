@@ -1,0 +1,17 @@
+#front{
+    color: #F6F4F0;
+    background: #212529;
+    height: 100vh;
+    background: linear-gradient(#212529 30%, #353a3f 70%);
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+}
+#logo{
+  border-radius: 4px;
+}
+
+#a1{
+   text-decoration: none; 
+}
