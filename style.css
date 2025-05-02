@@ -15,3 +15,10 @@
 #a1{
    text-decoration: none; 
 }
+
+#imgPreset{
+    border-radius: 8px;
+    height: 500px;
+    width: 375px;
+    padding: 4px;
+}
