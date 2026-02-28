@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>sk23</title>
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <title>skeppr</title>
+        <link rel="icon" type="image/x-icon" href="img/imac.png">
         <meta charset="utf-8">
         <meta name="viewport"content = "width=device-width", initial-scale="1">
         <link href="style.css" rel="stylesheet">
-        <script src="java.js"></script> 
         <style>
             * {
                 &::-webkit-scrollbar-track {
@@ -20,21 +19,41 @@
             }
         </style>
     <body>
-        
         <ul id="navbar">
-            <li><a href="index.html" onclick="saveCurrentPage('skeppr')">Skeppr</a></li>
-            <li><a href="about.html" onclick="saveCurrentPage('skeppr')">About</a></li>
-            <li><a href="projects.html" onclick="saveCurrentPage('skeppr')">Projects</a></li>
-            <li><a href=".html">Placeholder</a></li>
-            <li style="float: right"><a id="clock"></a></li>
+            <li><a href="index.html">Skeppr</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li style="float: right"><p id="clock"></p></li>
         </ul>
         <img src="img/bottombar.png" id="bottombar">
+        <div id="desktop-icons">
+            <img id="icon" src="img/disk.png">
+            <button onclick="hideshow()" id="archive-folder"><img id="folder" src="img/archive.png" width="50px" height="56px"></button>
+        </div>
+        <div id="explorer">
+            <div id="explorerheader"><button id="closebutton" onclick="hideshow()"></button></div>
+            <div id="explorercontent">
+                <a href="older sites/index.html" target="_blank"><img src="img/index.png" class="icon"></a>
+                <a href="older sites/indexold.html" target="_blank"><img src="img/indexold.png" class="icon"></a>
+            </div>
+        </div>
         <div id="window-container">
             <div id="window">
                 <div id="window-content">
-                    <h3>helloo!!!<br>welcome to my site! :3<br></h3> 
+                    <h3>helloo!!!<br>welcome to my site! :3<br>im skeppr! i also previously went by skepper23<br>
+                        <br>i mostly just do stuff with computers! <br> i normally work on hardware, but sometimes i like to mess with software. <br> 
+                        this site is mostly for showing off the stuff i do!
+                    </h3> 
+                    <div id="social-medias">
+                        <a href="https://github.com/Skepper23" target="_blank"><img src="img/github.png"></a>
+                        <a href="https://x.com/skeppr23" target="_blank"><img src="img/twitter.png"></a>
+                        <a href="https://www.youtube.com/@skeppr" target="_blank"><img src="img/youtube.png"></a>
+                    </div>
+                    <img src="img/Happy_Mac_original.png" height="auto" width="90px" class="center">
                 </div>
             </div>
         </div>
+
+        <script src="java.js"></script> 
     </body>
 </html>

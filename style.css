@@ -3,9 +3,13 @@
     font-family: "Chicago";
     src: url('fonts/ChicagoKare-Regular.woff');
 }
+@font-face {
+    font-family: Geneva;
+    src: url('fonts/geneva_9.woff');
+}
 
 body{
-    zoom: 125%;
+    zoom: 1.3;
     image-rendering: pixelated;
     -webkit-font-smoothing:none;
     font-family: "Chicago";
@@ -21,8 +25,6 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 #window {
     height: 500px;
@@ -46,6 +48,17 @@ body{
     margin: 20px 10px 10px 0;
 }
 
+#window-projects {
+    height: 500px;
+    width: 584px;
+    border-style: solid;
+    border-width: 25px 0 52px 0;
+    border-image: url('img/os9windowPROJECTS.png') 25 0 52 0 fill stretch;
+    padding: 10px;
+    overflow: auto;
+    margin: 20px 10px 10px 0;
+}
+
 #window-content {
     display: flex;
     flex-direction: column;
@@ -53,7 +66,11 @@ body{
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    
+}
+
+.center{
+    display: flex;
+    margin: auto;
 }
 
 #navbar {
@@ -96,3 +113,67 @@ ul li a:active {
     width: 520px;
 }
 
+#clock{
+    margin: 0;
+    margin-right: 10px;
+}
+
+#social-medias {
+    padding-bottom: 15px;
+}
+
+#desktop-icons {
+    padding-top: 20px;
+    padding-right: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#explorer {
+    width: 420px;
+    top: 50px;
+    right: 100px;
+    position: absolute;
+    z-index: 9;
+}
+
+#explorerheader {
+    padding: 0px;
+    cursor: move;
+    z-index: 10;
+    background-image: url(img/finder-topbar.png);
+}
+
+#explorercontent{
+    background-image: url(img/finder-maincontent.png);
+    height: 335px;
+}
+
+#archive-folder { 
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+
+
+.icon{ 
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+#closebutton{
+    height: 10px;
+    width: 10px;
+    margin-left: 4px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
