@@ -84,3 +84,6 @@ dragElement(document.getElementById("explorer"));
                 document.onmousemove = null;
             }
             }
+
+
+

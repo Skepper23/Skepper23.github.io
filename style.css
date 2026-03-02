@@ -26,37 +26,51 @@ body{
     margin-right: auto;
 }
 
+
 #window {
     height: 500px;
     width: 584px;
+    /*
     border-style: solid;
     border-width: 25px 0 52px 0;
     border-image: url('img/os9window.png') 25 0 52 0 fill stretch;
-    padding: 10px;
+    */
+    background-image: url(img/os9window.png);
+    background-repeat: no-repeat;
     overflow: auto;
-    margin: 20px 10px 10px 0;
+    margin-top: 20px;
+    padding-top: 10px;
 }
+
 
 #window-about {
     height: 500px;
     width: 584px;
+    /*
     border-style: solid;
     border-width: 25px 0 52px 0;
-    border-image: url('img/os9windowABOUT.png') 25 0 52 0 fill stretch;
-    padding: 10px;
+    border-image: url('img/os9window.png') 25 0 52 0 fill stretch;
+    */
+    background-image: url(img/os9windowABOUT.png);
+    background-repeat: no-repeat;
     overflow: auto;
-    margin: 20px 10px 10px 0;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
 #window-projects {
     height: 500px;
     width: 584px;
+    /*
     border-style: solid;
     border-width: 25px 0 52px 0;
-    border-image: url('img/os9windowPROJECTS.png') 25 0 52 0 fill stretch;
-    padding: 10px;
+    border-image: url('img/os9window.png') 25 0 52 0 fill stretch;
+    */
+    background-image: url(img/os9windowPROJECTS.png);
+    background-repeat: no-repeat;
     overflow: auto;
-    margin: 20px 10px 10px 0;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
 #window-content {
