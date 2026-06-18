@@ -13,13 +13,15 @@ function clock(){
 setInterval(clock,100);
 
 
+
+
 function hideshow() {
   var x = document.getElementById("explorer");
   if (x.style.display === "none") {
     changeIcon()
     document.getElementById("explorer").style.top="30px";
-    document.getElementById("explorer").style.right="100px";
-    document.getElementById("explorer").style.left="950px";
+    /*document.getElementById("explorer").style.right="100px";*/
+    document.getElementById("explorer").style.left="50vw";
     x.style.display = "block";
     
   } else {
@@ -38,6 +40,33 @@ function changeIcon() {
   }
 }
 
+function changeBtn(){
+  console.log("asdasd")
+  const img = document.getElementById('apple');
+  const img1 = "img/apple1.png"
+  const img2 = "img/appleselected.png"
+  if (img.src.match(img1)) {
+    img.src = img2;
+    drpdwn()
+  } else {
+    img.src = img1;
+    drpdwn()
+  }
+}
+
+function drpdwn() {
+  document.getElementById("dropdown1").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var dropdown1 = document.getElementById("dropdown1");
+    if (dropdown1.classList.contains('show')) {
+      changeBtn()
+      dropdown1.classList.remove('show');
+    }
+  }
+}
 
 function hideonopen() {
     var x = document.getElementById("explorer");
