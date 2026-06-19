@@ -20,11 +20,27 @@
         </style>
     <body>
         <ul id="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="changeBtn()">
+                    <img src="img/apple1.png" id="apple">
+                </button>
+                
+            </div>
             <li><a href="index.html">Skeppr</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li style="float: right"><p id="clock"></p></li>
+            <li style="margin-left: auto;"><p id="clock"></p></li>
         </ul>
+        <div id="navcontainer">
+            <div class="dropdown-content" id="dropdown1">
+                <a onclick="abt()" id="abt">About This Computer</a>
+                <a id="cont">Control Panels</a>
+            </div>
+            <div id="menus">
+                <a id="app">Appearance</a>
+            </div>
+        </div>
+        
         <img src="img/bottombar.png" id="bottombar">
         <div id="desktop-icons">
             <img id="icon" src="img/disk.png">

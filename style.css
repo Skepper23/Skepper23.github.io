@@ -4,7 +4,7 @@
     src: url('fonts/ChicagoKare-Regular.woff');
 }
 @font-face {
-    font-family: Geneva;
+    font-family: "Geneva";
     src: url('fonts/geneva_9.woff');
 }
 
@@ -180,6 +180,27 @@ ul li a:active {
     
 }
 
+#aboutComp{
+    width: 479px;
+    height: 281px;
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
+
+#aboutCompheader{
+    height: 22px;
+    padding: 0px;
+    cursor: move;
+    background-image: url(img/aboutTop.png);
+}
+
+#aboutCont{
+    background-image: url(img/aboutCont.png);
+    height: 259px;
+}
 
 .icon{ 
     margin-left: 20px;
@@ -258,6 +279,12 @@ ul li a:active {
     padding-left: 21px;
 }
 
+#cont{
+    background-image: url(img/control.png);
+    padding-left: 41px;
+}
+
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -272,4 +299,49 @@ ul li a:active {
     display: block;
     width: 207px;
     height: 20px;
+}
+
+#abt:hover{
+    background-image: url(img/abtsel.png);
+    cursor: pointer;
+}
+
+#cont:hover{
+    background-image: url(img/controlsel.png);
+    cursor: pointer;
+}
+
+body:has(#cont:hover) #menus {
+    display: block;
+}
+
+body:has(#menus:hover) #cont {
+    background-image: url(img/controlsel.png);
+    color: white;
+}
+
+.dropdown-content a:hover{
+    color: white;
+}
+
+#menus{
+    cursor: pointer;
+    background-image: url(img/select.png);
+    background-repeat: no-repeat;
+    display: none;
+    position: absolute;
+    width: 156px;
+    margin-left: 200px;
+    margin-top: 18px;
+    z-index: 2;
+}
+
+#menus:hover{
+    background-image: url(img/select1.png);
+    color: white;
+    display: block;
+}
+
+#app{
+    padding-left: 21px;
 }
