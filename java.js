@@ -38,6 +38,17 @@ function hsAbt() {
   }
 }
 
+function hsApp() {
+  var x = document.getElementById("appearance");
+  if (x.style.display === "none") {
+    document.getElementById("appearance").style.top="30vh";
+    document.getElementById("appearance").style.left="38.5vw";
+    x.style.display = "block";
+  } else {
+    x.style.display = "none"
+  }
+}
+
 function changeIcon() {
   var x = document.getElementById("explorer");
   if (x.style.display === "none") {
@@ -79,8 +90,10 @@ window.onclick = function(e) {
 function hideonopen() {
     var x = document.getElementById("explorer");
     var y = document.getElementById("aboutComp");
+    var z = document.getElementById("appearance");
     x.style.display = "none";
     y.style.display = "none";
+    z.style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -124,7 +137,7 @@ dragElement(document.getElementById("explorer"));
             }
 
 
-dragElement(document.getElementById("aboutComp"));
+dragElement(document.getElementById("appearance"));
 
             function dragElement(elmnt) {
             var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -160,4 +173,39 @@ dragElement(document.getElementById("aboutComp"));
             }
             }
 
+            dragElement(document.getElementById("aboutComp"));
+
+            function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                const zoomLevel = 1.3;
+
+                pos1 = (pos3 - e.clientX) / zoomLevel;
+                pos2 = (pos4 - e.clientY) / zoomLevel;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+            }
 
