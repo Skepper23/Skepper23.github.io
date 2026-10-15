@@ -60,7 +60,6 @@ function changeIcon() {
 }
 
 function changeBtn(){
-  console.log("asdasd")
   const img = document.getElementById('apple');
   const img1 = "img/apple1.png"
   const img2 = "img/appleselected.png"
