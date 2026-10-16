@@ -38,6 +38,7 @@ function hsAbt() {
   }
 }
 
+
 function hsApp() {
   var x = document.getElementById("appearance");
   if (x.style.display === "none") {
@@ -86,6 +87,18 @@ window.onclick = function(e) {
   }
 }
 
+document.getElementById('cont').addEventListener("mouseover", (event) => {
+/*function showbutton() {*/
+  document.getElementById('menus').style.display = "block";
+});
+
+
+document.getElementById('app').onclick = function() {hidebutton()};
+function hidebutton() {
+  document.getElementById('menus').style.display = "none";
+  hsApp();
+}
+
 function hideonopen() {
     var x = document.getElementById("explorer");
     var y = document.getElementById("aboutComp");
@@ -98,6 +111,8 @@ function hideonopen() {
 document.addEventListener("DOMContentLoaded", function() {
   hideonopen();
 });
+
+
 
 dragElement(document.getElementById("explorer"));
 
@@ -208,3 +223,4 @@ dragElement(document.getElementById("appearance"));
             }
             }
 
+/* SCREW YOOOUUU */ 
