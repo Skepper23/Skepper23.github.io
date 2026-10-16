@@ -87,9 +87,41 @@ window.onclick = function(e) {
   }
 }
 
+var mouseon = 'false'
 document.getElementById('cont').addEventListener("mouseover", (event) => {
-/*function showbutton() {*/
-  document.getElementById('menus').style.display = "block";
+  mouseon = 'true'
+  if (mouseon === 'true'){
+    document.getElementById('menus').style.display = "block";
+    } else {
+    document.getElementById('menus').style.display = "none";
+  }
+});
+
+document.getElementById('cont').addEventListener("mouseout", (event) => {
+  mouseon = 'false'
+  if (mouseon === 'true'){
+    document.getElementById('menus').style.display = "block";
+    } else {
+    document.getElementById('menus').style.display = "none";
+  }
+});
+
+document.getElementById('app').addEventListener("mouseover", (event) => {
+  mouseon = 'true'
+  if (mouseon === 'true'){
+    document.getElementById('menus').style.display = "block";
+    } else {
+    document.getElementById('menus').style.display = "none";
+  }
+});
+
+document.getElementById('app').addEventListener("mouseout", (event) => {
+  mouseon = 'false'
+  if (mouseon === 'true'){
+    document.getElementById('menus').style.display = "block";
+    } else {
+    document.getElementById('menus').style.display = "none";
+  }
 });
 
 
