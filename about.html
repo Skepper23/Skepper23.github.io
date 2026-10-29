@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>skeppr</title>
+        <title>skeppr - About</title>
         <link rel="icon" type="image/x-icon" href="img/imac.png">
         <meta charset="utf-8">
         <meta name="viewport"content = "width=device-width", initial-scale="1">
@@ -24,7 +24,6 @@
                 <button class="dropbtn" onclick="changeBtn()">
                     <img src="img/apple1.png" id="apple">
                 </button>
-                
             </div>
             <li><a href="index.html">Skeppr</a></li>
             <li><a href="about.html">About</a></li>
@@ -33,15 +32,27 @@
         </ul>
         <div id="navcontainer">
             <div class="dropdown-content" id="dropdown1">
-                <a onclick="abt()" id="abt">About This Computer</a>
+                <a onclick="hsAbt()" id="abt">About This Computer</a>
                 <a id="cont">Control Panels</a>
             </div>
             <div id="menus">
-                <a id="app">Appearance</a>
+                <a onclick="hsApp()" id="app">Appearance</a>
             </div>
         </div>
-
-        
+        <div id="aboutComp">
+            <div id="aboutCompheader"><button id="closebutton" onclick="hsAbt()"></button></div>
+            <div id="aboutCont"></div>
+        </div>
+        <div id="appearance">
+            <div id="appearanceheader"><button id="closebutton" onclick="hsApp()"></button></div>
+            <div id="appearanceCont">
+                <div id="imagebuttons">
+                    <button id="imagebutton" onclick="selectimage1()">Stars</button>
+                    <button id="imagebutton" onclick="selectimage2()">Circuits</button>
+                    <button id="imagebutton" onclick="selectimage3()">Cats</button>
+                </div>
+            </div>
+        </div>
         <img src="img/bottombar.png" id="bottombar">
         <div id="desktop-icons">
             <img id="icon" src="img/disk.png">
@@ -54,11 +65,13 @@
                 <a href="older sites/indexold.html" target="_blank"><img src="img/indexold.png" class="icon"></a>
             </div>
         </div>
+
+
         <div id="window-container">
             <div id="window-about">
                 <div id="window-content">
-                    <h2>about me</h2> 
-                    <h3>stuff goes here</h3>
+                    <h3>about me</h3> 
+                    <p>stuff goes here</p>
                 </div>
             </div>
         </div>
