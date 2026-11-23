@@ -385,3 +385,18 @@ body:has(#menus:hover) #cont {
     border: transparent;
     cursor: pointer;
 }
+
+#SetDesktop{
+    width: 86px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 161px;
+    margin-left: 373px;
+    background-color: #33339900;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+#SetDesktop:active{
+    background-color: rgba(0, 0, 0, 0.192);
+}
